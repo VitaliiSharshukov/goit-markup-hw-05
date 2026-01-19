@@ -19,8 +19,6 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-
-
   <body>
     <header class="page-header">
       <div class="container header-container">
@@ -50,7 +48,6 @@
         </address>
       </div>
     </header>
-
     <main>
       <section class="section-solution">
         <div class="solution container">
@@ -412,7 +409,6 @@
         </div>
       </section>
     </main>
-
     <footer class="footer">
       <div class="footer-container container">
         <div class="footer-info">
@@ -457,22 +453,41 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subscribe">
+          <p class="footer-subscribe-title">Subscribe</p>
+          <form class="subscribe">
+            <label class="subscribe-label" for="email">
+              <input
+                class="subscribe-input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="subscribe-button" type="submit">
+              Subscribe
+              <svg class="subscribe-icon" width="24" height="24" fill="none">
+                <use href="./images/icons.svg#icon-subscribe"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
-
-
-    <div class="overlay is-open">
+    <div class="overlay">
       <div class="modal">
-        <button type="button" class="btn-close-modal">
+        <button type="button" 
+         class="btn-close-modal">
           <svg class="close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
-        <div class="modal-form">
+        <form class="modal-form">
           <div class="modal-form-wrap">
             <label class="input-label" for="user-name">Name</label>
-            <div class="input-wrap" bis_skin_checked="1">
+            <div class="input-wrap">
               <input
                 type="text"
                 class="modal-input"
@@ -487,7 +502,7 @@
           </div>
           <div class="modal-form-wrap">
             <label class="input-label" for="user-phone">Phone</label>
-            <div class="input-wrap" bis_skin_checked="1">
+            <div class="input-wrap">
               <input
                 type="tel"
                 class="modal-input"
@@ -521,31 +536,24 @@
                 class="modal-textarea"
                 name="user-comment"
                 id="user-comment"
-                placeholder="Text input">
-              </textarea>
+                placeholder="Text input"
+                ></textarea>
           </div>
-          <div class="checkbox-wrap">            
-              <input type="checkbox" 
-              class="modal-checkbox" 
-              name="policy" id="policy" 
-              required 
-              value="yes" />   
-             <label class="checkbox-title" for="policy">
-               <span class="button-check">
-                <svg class="check-icon " width="10" height="8">
-                  <use href="./images/icons.svg#icon-accept">
-                  </use>
-                </svg>
-               </span>
-               I accept the terms and conditions of the 
-               <a href="#" class="checkbox-title link">Privacy Policy</a>
-             </label>                       
+          <div class="checkbox-wrap">
+            <div class="checkbox-btn">
+              <input type="checkbox" class="modal-checkbox" id="accept" />
+              <svg class="checkbox-icon" width="10" height="8">
+                <use href="./images/icons.svg#icon-accept"></use>
+              </svg>
+            </div>
+            <label class="checkbox-label" for="accept"
+              >I accept the terms and conditions of the 
+              <a href="#" class="checkbox-link"> Privacy Policy</a></label>            
           </div>
-
-          <div class="btn-wrap-modal">
+          <!-- <div class="btn-wrap-modal"> -->
           <button type="submit" class="btn-submit-modal">Send</button>
-          </div>
-        </div>
+          <!-- </div> -->
+        </form>
       </div>
     </div>
   </body>

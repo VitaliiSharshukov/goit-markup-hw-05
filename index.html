@@ -517,7 +517,7 @@
           </div>
           <div class="modal-form-wrap">
             <label class="input-label" for="user-email">Email</label>
-            <div class="input-wrap">
+            <div class="input-wrap" bis_skin_checked="1">
               <input
                 type="email"
                 class="modal-input"
@@ -539,20 +539,27 @@
                 placeholder="Text input"
                 ></textarea>
           </div>
-          <div class="checkbox-wrap">
-            <div class="checkbox-btn">
-              <input type="checkbox" class="modal-checkbox" id="accept" />
-              <svg class="checkbox-icon" width="10" height="8">
+          <div class="checkbox-wrap">            
+            <input type="checkbox" 
+              class="modal-checkbox" 
+              id="policy" 
+              name="policy"
+              required
+              value="accepted" 
+            />
+                         
+            <label class="checkbox-label" for="policy">
+              <span class="checkbox-label-in">
+               <svg class="checkbox-icon" width="10" height="8">
                 <use href="./images/icons.svg#icon-accept"></use>
-              </svg>
-            </div>
-            <label class="checkbox-label" for="accept"
-              >I accept the terms and conditions of the 
-              <a href="#" class="checkbox-link"> Privacy Policy</a></label>            
-          </div>
-          <!-- <div class="btn-wrap-modal"> -->
+               </svg>
+              </span>
+              I accept the terms and conditions of the 
+              <a href="#" class="checkbox-link"> Privacy Policy</a>
+            </label> 
+          </div>           
+      </label>            
           <button type="submit" class="btn-submit-modal">Send</button>
-          <!-- </div> -->
         </form>
       </div>
     </div>

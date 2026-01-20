@@ -578,7 +578,6 @@ img {
   padding: 8px 24px;
   border: none;
   border-radius: 4px;
-  padding: 8px 24px;
   width: 165px;
   height: 40px;
   background-color: #4d5ae5;
@@ -605,6 +604,7 @@ img {
 .overlay {
   display: flex;
   position: fixed;
+  visibility: hidden;
   top: 0;
   left: 0;
   width: 100%;
@@ -718,11 +718,6 @@ img {
   position: relative;
 }
 
-.modal-form {
-  display: flex;
-  flex-direction: column;
-}
-
 .modal-input {
   position: static;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -798,20 +793,6 @@ color: rgba(46, 47, 66, 0.4);
   display: flex;
   align-items: center;
   margin-bottom: 24px;
-  /* position: relative; */ 
-}
-
-.modal-checkbox {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0, 0, 0, 0);
-    overflow: hidden;
 }
 
 .modal-checkbox:checked + .checkbox-label .checkbox-label-in {
